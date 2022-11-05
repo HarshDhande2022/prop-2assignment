@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Img from './Images/img1.jpg';
+import Img2 from './Images/img2.jpg';
+import Cards from './Components/Card';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Cards NewHottel="Hottel Harsh" YearOfOpening="2021, Near Maharaja Nagar, Nagpur" images={Img} />
+    <Cards
+      NewHottel="Hottel Taj"
+      YearOfOpening="2022, Near Jaripatka, Nagpur"
+      images={Img2}
+    />
+  </div>
   );
 }
 
